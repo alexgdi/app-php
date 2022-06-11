@@ -13,3 +13,4 @@ services:
     build: ./app
     volumes:
       - ./www:/var/www
+      - ./fpm:/etc/php8/php-fpm.d
