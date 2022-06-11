@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./hosts:/etc/nginx/conf.d
+      - ./hosts:/etc/nginx/http.d
       - ./www:/var/www
     depends_on:
       - app
