@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./hosts:/etc/nginx/http.d
+     # - ./hosts:/etc/nginx/http.d
       - ./www:/var/www
     depends_on:
       - app
@@ -13,4 +13,4 @@ services:
     build: ./app
     volumes:
       - ./www:/var/www
-      - ./fpm:/etc/php8/php-fpm.d
+     # - ./fpm:/etc/php8/php-fpm.d
