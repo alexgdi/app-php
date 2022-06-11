@@ -8,8 +8,8 @@ services:
       - ./hosts:/etc/nginx/conf.d
       - ./www:/var/www
     depends_on:
-      - php
-  php:
+      - app
+  app:
     build: ./app
     volumes:
       - ./www:/var/www
